@@ -64,7 +64,7 @@ export function render(data) {
 
   Promise.all([
     getList('Planets', data.planets),
-    getList('Starships', data.species)
+    getList('Species', data.species)
   ]).then(([planets, species]) => {
     const descrCard = document.createElement('div');
     descrCard.classList.add('card', 'mb-5', 'd-flex', 'flex-row', 'px-2', 'py-2');
